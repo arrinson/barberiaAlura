@@ -13,7 +13,7 @@
 <header>
 
 <div class="caja">
-<h1><img src="imagenes/imagenes/logo.png"></h1>
+<h1><img src="imagenes/imagenes/logo.png" alt="Logo"></h1>
 
 <nav>
 <ul>
@@ -29,39 +29,81 @@
 <main>
 <form>
 <label for="nombreapellido">Nombre y Apellidos</label>
-<input type="text" id="nombreapellido" class="input-patron">
+<input type="text" id="nombreapellido" class="input-patron" required >
 
 <label for="correoelectronico">Correo Electronico</label>
-<input type="text" id="correoelectronico" class="input-patron">
+<input type="email" id="correoelectronico" class="input-patron" required placeholder="email@dominio.com">
 
 <label for="telefono">Telefono</label>
-<input type="text" id="telefono" class="input-patron">
+<input type="tel" id="telefono" class="input-patron" required placeholder="(XX)XXXX-XXXX">
 
 <label for="mensaje">Mensaje</label>
-<textarea cols="70" rows="10" id="mensaje" class="input-patron"></textarea>
+<textarea cols="70" rows="10" id="mensaje" class="input-patron" required></textarea>
 
 
-<div>
-<p>Como le gustaria que los contactemos!!</p>
+<fieldset>
+<legend class="test" id ="test">!!Como le gustaria que los contactemos!!</legend>
+
 <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">
 Email</label>
 
 <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
 
+<label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
 
-<label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">
-</div>WhatsApp</label>
+</fieldset>
 
 
-<label><input type="checkbox" value="Enviar Formulario"></label>
+<fieldset>
+<legend>!!En cual horario prefiere ser atendido!!</legend>
+<select>
+<option>Mañana</option>
+<option>Tarde</option>
+<option>Noche</option>
+</select>
+</fieldset>
 
-<input type="submit" value="Enviar Formulario">
+
+
+<label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura!!></label>
+
+<input class="enviar" type="submit" value="Enviar Formulario">
 
 </form>
+
+<table>
+
+<thead>
+<tr>
+<td>Dia</td>
+<td>Horario</td>
+</tr>
+</thead>
+
+
+<tbody>
+<tr>
+<td>Lunes</td>
+<td>08h - 20h</td>
+</tr>
+
+<tr>
+<td>Miercoles</td>
+<td>08h - 20h</td>
+</tr>
+
+<tr>
+<td>Viernes</td>
+<td>08h - 20h</td>
+</tr>
+</tbody>
+
+</table>
+
 </main>
 
 <footer>
-<img src="imagenes/imagenes/logo-blanco.png">
+<img src="imagenes/imagenes/logo-blanco.png" alt="Logo">
 <p class="copYright">&copy Copyright Barberia Alura -2023</p>
 </footer>
 </body>

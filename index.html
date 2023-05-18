@@ -4,8 +4,14 @@
 <head>
 	<!–– ETIQUETEAS INFORMATIVAS ––>
 <meta charset="UTF-8">
+<meta name="viewport" content="width-device-width">
+
 <title>Barberia - Alura</title>
- <link rel="stylesheet" href="CSS/style-home.css">
+ <link rel="stylesheet" href="CSS/reset.css">
+ <link rel="stylesheet" href="CSS/style.css">
+ <link href"https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 
@@ -13,32 +19,73 @@
 	 <!–– ETIQUETEAS DE CONTENIDO––>
 
 <header>
-<h1 class="titulo-principal">BARBERIA ALURA</h1>
+
+<div class="caja">
+<h1><img src="imagenes/imagenes/logo.png"></h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="producto.html">Productos</a></li>
+<li><a href="contactos.html">Contacto</a></li>
+</ul>
+</nav>
+
+</div>
 </header>
 
-<img id="img" src="IMG/descarga.jfif">
-<div class="principal">
-<h2 class="titulo-centralizado"> Sobre la Barbería Alura</h2>
+<img class="banner" src="diferenciales/banner.jpg">
 
+<main>
+<p>parrafo de ejemplo</p>
+<section class="principal">
+<h2 class="titulo-principal"> Sobre la Barbería Alura</h2>
+<img class="utensilios" alt="utensilios de un barbero" src="imagenes/utensilios.jpg">
 <p>Ubicada en el corazón de la ciudad, <strong>la Barbería Alura </strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
 
 <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em> </p>
 
 <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+</section>
+
+<section class="mapa">
+<h3 class="titulo-principal">Nuestra Ubicancion</h3>
+<p>Nuestro establecimiento esta ubicado en el corazon de la ciudad </p>
+
+<div class="mapa-contenido">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.511480080568!2d-74.13479839720296!3d4.571037326761841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fa40d5c2963%3A0x382f6141b1373602!2sELECTRO%20ALEMANA%20Z.B%20LTDA.!5e0!3m2!1ses!2sco!4v1684279178798!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
-<div class="diferenciales">
-<h3 class="titulo-centralizado">Diferenciales</h3>
+</section>
 
-<ul>
+<section class="diferenciales">
+<h3 class="titulo-principal">Diferenciales</h3>
+
+<div class="contenido-diferenciales">
+<ul class="lista-diferenciales">
 <li class="items">Atencion personalizada a los clientes</li>
 <li class="items">Epacios diferenciado</li>
 <li class="items">Localizacion</li>
 <li class="items">Profesionales calificados</li>
-</ul>
-
-<img src="diferenciales/diferenciales.jpg" class="IMAGENdiferencial">
+<li class="items">Puntualidad</li>
+<li class="items">Limpieza</li>
+</ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
 </div>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9hfeQqI3gOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+</section>
+
+
+
+</main>
+
+<footer>
+<img src="imagenes/imagenes/logo-blanco.png">
+<p class="copYright">&copy Copyright Barberia Alura -2023</p>
+</footer>
 
 </body>
 </html>
